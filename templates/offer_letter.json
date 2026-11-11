@@ -1,0 +1,24 @@
+{
+  "id": "offer_letter",
+  "title": "Job Offer Letter",
+  "description": "Letter offering a candidate a position with salary and start date.",
+  "fields": [
+    {"name": "company_name", "label": "Company name", "type": "text"},
+    {"name": "candidate_name", "label": "Candidate's full name", "type": "text"},
+    {"name": "job_title", "label": "Job title", "type": "text"},
+    {"name": "start_date", "label": "Start date", "type": "date"},
+    {"name": "monthly_salary", "label": "Monthly salary (with currency)", "type": "text"},
+    {"name": "manager_name", "label": "Reporting manager", "type": "text"},
+    {"name": "reply_by", "label": "Date to accept the offer by", "type": "date"},
+    {"name": "hr_contact_email", "label": "HR contact email", "type": "email"}
+  ],
+  "body": [
+    "{today}",
+    "Dear {candidate_name},",
+    "We are pleased to offer you the position of {job_title} at {company_name}, starting on {start_date}.",
+    "Your monthly salary will be {monthly_salary}. You will report to {manager_name}.",
+    "Please confirm your acceptance by {reply_by} by replying to {hr_contact_email}.",
+    "We look forward to working with you.",
+    "Best regards,\n{company_name}"
+  ]
+}

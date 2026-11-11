@@ -1,0 +1,24 @@
+{
+  "id": "experience_letter",
+  "title": "Experience Letter",
+  "description": "Letter from an employer confirming someone's job title, dates and duties.",
+  "fields": [
+    {"name": "company_name", "label": "Company name", "type": "text"},
+    {"name": "employee_name", "label": "Employee's full name", "type": "text"},
+    {"name": "job_title", "label": "Job title", "type": "text"},
+    {"name": "start_date", "label": "Start date", "type": "date"},
+    {"name": "end_date", "label": "Last working day", "type": "date"},
+    {"name": "duties", "label": "Main duties (one or two sentences)", "type": "text"},
+    {"name": "signatory_name", "label": "Name of the person signing", "type": "text"},
+    {"name": "signatory_title", "label": "Title of the person signing", "type": "text"}
+  ],
+  "body": [
+    "{today}",
+    "TO WHOM IT MAY CONCERN",
+    "This is to certify that {employee_name} worked at {company_name} as {job_title} from {start_date} to {end_date}.",
+    "During this period, {employee_name} was responsible for the following: {duties}",
+    "We found {employee_name} to be dependable and professional, and we wish them every success in the future.",
+    "Sincerely,",
+    "{signatory_name}\n{signatory_title}\n{company_name}"
+  ]
+}

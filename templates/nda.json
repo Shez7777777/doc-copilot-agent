@@ -1,0 +1,24 @@
+{
+  "id": "nda",
+  "title": "Mutual Non-Disclosure Agreement",
+  "description": "Two parties agree to keep each other's confidential information private, e.g. before discussing a partnership.",
+  "fields": [
+    {"name": "party_a", "label": "First party (company or person)", "type": "text"},
+    {"name": "party_b", "label": "Second party (company or person)", "type": "text"},
+    {"name": "purpose", "label": "Purpose of sharing information", "type": "text"},
+    {"name": "effective_date", "label": "Effective date", "type": "date"},
+    {"name": "term_years", "label": "How many years confidentiality lasts", "type": "number"},
+    {"name": "governing_law", "label": "Governing law (country or state)", "type": "text"}
+  ],
+  "body": [
+    "This Mutual Non-Disclosure Agreement is made on {effective_date} between {party_a} and {party_b}.",
+    "1. Purpose. The parties want to share information for the following purpose: {purpose}.",
+    "2. Confidential information. Any non-public business, technical or financial information shared by one party with the other, in any form, is confidential.",
+    "3. Obligations. Each party will use the other's confidential information only for the purpose above, will not disclose it to third parties, and will protect it with at least reasonable care.",
+    "4. Exceptions. These obligations do not apply to information that is public, was already known to the receiving party, or must be disclosed by law.",
+    "5. Term. These obligations last for {term_years} years from the effective date.",
+    "6. Governing law. This agreement is governed by the laws of {governing_law}.",
+    "Signed for {party_a}: ____________________",
+    "Signed for {party_b}: ____________________"
+  ]
+}
